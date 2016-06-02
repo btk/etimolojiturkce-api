@@ -9,6 +9,7 @@ Allows you to see if the database service is up and running.
 
 ```
 GET http://www.etimolojiturkce.com/api/status
+
 {
   "status":"1",
   "message":"Service is UP"
@@ -20,6 +21,7 @@ Allows you to get all the the etymology data about a spesific word.
 
 ```
 GET http://www.etimolojiturkce.com/api/word/{WORD} (eg: mahal)
+
 {
   "return":"1",
   "word":"mahal",
@@ -43,6 +45,7 @@ Allows you to get the data of a random word from the Database.
 
 ```
 GET http://www.etimolojiturkce.com/api/word/random
+
 {
   "return":"1",
   "word":"beyhude",
@@ -54,7 +57,8 @@ GET http://www.etimolojiturkce.com/api/word/random
 Allows you to get the data of a random word from the Database.
 
 ```
-GET http://www.etimolojiturkce.com/api/word/random&q={quantity} (MAX:10)
-["'anons','m\u00fcfsit','g\u00f6zde','vidanj\u00f6r','otizm'"]
+GET http://www.etimolojiturkce.com/api/word/random&q={quantity} (eg:5, MAX:10)
+
+["sardalya","kar\u015f\u0131","mucit","hedonizm","delalet"]
 ```
 (Returns an array)
