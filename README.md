@@ -53,7 +53,7 @@ GET http://www.etimolojiturkce.com/api/word/random
 }
 ```
 
-### Get Multiple Random Word Data
+### Get Multiple Random Words
 Allows you to get the data of a random word from the Database.
 
 ```
@@ -61,4 +61,4 @@ GET http://www.etimolojiturkce.com/api/word/random&q={quantity} (eg:5, MAX:10)
 
 ["sardalya","kar\u015f\u0131","mucit","hedonizm","delalet"]
 ```
-(Returns an array)
+This returns an array of words.
