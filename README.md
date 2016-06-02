@@ -36,3 +36,25 @@ GET http://www.etimolojiturkce.com/api/word/{WORD} (eg: mahal)
  - ***explanation:*** Explanation and meaning of the word and its roots.
  - ***firstInHistory:*** Which Turkish book contains the word for the first time as it is known.
  - ***additional:*** Additional information about the word or its roots.
+ 
+
+### Get A Random Word Data
+Allows you to get the data of a random word from the Database.
+
+```
+GET http://www.etimolojiturkce.com/api/word/random
+{
+  "return":"1",
+  "word":"beyhude",
+  ---additional data here---
+}
+```
+
+### Get Multiple Random Word Data
+Allows you to get the data of a random word from the Database.
+
+```
+GET http://www.etimolojiturkce.com/api/word/random&q={quantity} (MAX:10)
+["'anons','m\u00fcfsit','g\u00f6zde','vidanj\u00f6r','otizm'"]
+```
+(Returns an array)
