@@ -62,3 +62,35 @@ GET http://www.etimolojiturkce.com/api/word/random&q={quantity} (eg:5, MAX:10)
 ["sardalya","kar\u015f\u0131","mucit","hedonizm","delalet"]
 ```
 This returns an array of words.
+
+
+### Search for Words
+Allows you to search in the existing words form the Database.
+
+```
+GET http://www.etimolojiturkce.com/api/search/{TERM} (eg: aba)
+
+{
+  "return":"1",
+  "0":"aba",
+  "1":"abanmak",
+  "2":"acaba",
+  "3":"akraba",
+  "4":"babagannu\u015f",
+  "5":"caba",
+  "6":"daraba",
+  "7":"gabavet",
+  "8":"gulyabani",
+  "9":"habaset"
+}
+```
+In this json dump, return value being 1 means that the searched {term} actually exist in the database, if return value is 0, the word does not exist, but the results by search engine are listed below. *MAX 10 word is listed.*
+
+
+
+## Suggestions
+Did you like the api? Yes it can be better, open any suggestions as an issue and have fun coding. Keep us updated with your project that you are using the api with.
+
+
+## Sources and Licensing
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
