@@ -12,8 +12,9 @@ function etimolojiTurkceApi(type, word, read, quant){
     xhr.send();
     
 }
-
     //Examples
+
+/*
        etimolojiTurkceApi("word", "sadasd", function(w){
             console.log(w); // word does not exist
        }, 1);
@@ -32,3 +33,5 @@ function etimolojiTurkceApi(type, word, read, quant){
        etimolojiTurkceApi("word", "random", function(w){
             console.log(w); // returns one random word data
        }, 0);
+
+*/
