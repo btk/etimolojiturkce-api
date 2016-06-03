@@ -86,7 +86,40 @@ GET http://www.etimolojiturkce.com/api/search/{TERM} (eg: aba)
 ```
 In this json dump, return value being 1 means that the searched {term} actually exist in the database, if return value is 0, the word does not exist, but the results by search engine are listed below. *MAX 10 word is listed.*
 
+## Examples with Javascript API
+The Javascript side of the API is already implemented, here is some examples explaining how you can use it;
 
+Download the javascript file in the master of his repository and include it to your page:
+
+```<script type="text/javascript" src="your/js/path/etimolojiturkce.js"></script>```
+
+Some examples with the function;
+
+```
+       etimolojiTurkceApi("word", "sadasd", function(w){
+            console.log(w); // word does not exist
+       }, 1);
+
+       etimolojiTurkceApi("word", "mahal", function(w){
+            console.log(w); // returns word
+       }, 1);
+
+       etimolojiTurkceApi("search", "aba", function(w){
+            console.log(w); // returns search result
+       }, 10);
+
+       etimolojiTurkceApi("word", "random", function(w){
+            console.log(w); // returns random words
+       }, 5);
+       
+       etimolojiTurkceApi("word", "random", function(w){
+            console.log(w); // returns one random word data
+       }, 0);
+       
+```
+
+- Do you want to show add some more examples? PR your examples in /js-examples directiory.
+- Did you implement `etimolojiTurkceApi()` function in the programming language you are using? PR your code to the master directiory.
 
 ## Suggestions
 Did you like the api? Yes it can be better, open any suggestions as an issue and have fun coding. Keep us updated with your project that you are using the api with.
