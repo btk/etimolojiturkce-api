@@ -1,3 +1,0 @@
-merhaba, neo!
-
-Key: rebelition
