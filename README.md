@@ -8,7 +8,7 @@ In this documentation and repository you can see the examples of how you can use
 Allows you to see if the database service is up and running.
 
 ```
-GET http://www.etimolojiturkce.com/api/status
+GET https://api.etimolojiturkce.com/status
 
 {
   "status":"1",
@@ -20,7 +20,7 @@ GET http://www.etimolojiturkce.com/api/status
 Allows you to get all the the etymology data about a spesific word.
 
 ```
-GET http://www.etimolojiturkce.com/api/word/{WORD} (eg: mahal)
+GET https://api.etimolojiturkce.com/word/{WORD} (eg: mahal)
 
 {
   "return":"1",
@@ -38,13 +38,13 @@ GET http://www.etimolojiturkce.com/api/word/{WORD} (eg: mahal)
  - ***explanation:*** Explanation and meaning of the word and its roots.
  - ***firstInHistory:*** Which Turkish book contains the word for the first time as it is known.
  - ***additional:*** Additional information about the word or its roots.
- 
+
 
 ### Get A Random Word Data
 Allows you to get the data of a random word from the Database.
 
 ```
-GET http://www.etimolojiturkce.com/api/word/random
+GET https://api.etimolojiturkce.com/word/random
 
 {
   "return":"1",
@@ -57,7 +57,7 @@ GET http://www.etimolojiturkce.com/api/word/random
 Allows you to get the data of a random word from the Database.
 
 ```
-GET http://www.etimolojiturkce.com/api/word/random&q={quantity} (eg:5, MAX:10)
+GET https://api.etimolojiturkce.com/word/random&q={quantity} (eg:5, MAX:10)
 
 ["sardalya","kar\u015f\u0131","mucit","hedonizm","delalet"]
 ```
@@ -68,7 +68,7 @@ This returns an array of words.
 Allows you to search in the existing words form the Database.
 
 ```
-GET http://www.etimolojiturkce.com/api/search/{TERM} (eg: aba)
+GET https://api.etimolojiturkce.com/search/{TERM} (eg: aba)
 
 {
   "return":"1",
@@ -111,11 +111,11 @@ Some examples with the function;
        etimolojiTurkceApi("word", "random", function(w){
             console.log(w); // returns random words
        }, 5);
-       
+
        etimolojiTurkceApi("word", "random", function(w){
             console.log(w); // returns one random word data
        }, 0);
-       
+
 ```
 
 - Do you want to show add some more examples? PR your examples in /js-examples directiory.
