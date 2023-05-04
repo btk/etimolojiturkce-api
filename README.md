@@ -1,3 +1,5 @@
+<p align="right"><a href="README.tr.md">Türkçe</a></p>
+
 Welcome, we are eager to see how creative minds can use our etymology database in their project.
 
 EtimolojiTurkce.com has about **14.000 Turkish word**'s etymological explanation, over 3.000 daily visitors and has a special search engine designed for Turkish words.
@@ -5,6 +7,7 @@ EtimolojiTurkce.com has about **14.000 Turkish word**'s etymological explanation
 In this documentation and repository you can see the examples of how you can use etimolojiturkce.com HTTP api in your projects.
 
 ### See the Database Status
+
 Allows you to see if the database service is up and running.
 
 ```
@@ -17,6 +20,7 @@ GET https://api.etimolojiturkce.com/status
 ```
 
 ### Get A Word's Data
+
 Allows you to get all the the etymology data about a spesific word.
 
 ```
@@ -32,15 +36,15 @@ GET https://api.etimolojiturkce.com/word/{WORD} (eg: mahal)
 }
 ```
 
- - ***return:*** If the word exist in DB, return 1 else return 0
- - ***word:*** Corrected version of the word you get the data for.
- - ***derivedLang:*** Which language the word has deriven from.
- - ***explanation:*** Explanation and meaning of the word and its roots.
- - ***firstInHistory:*** Which Turkish book contains the word for the first time as it is known.
- - ***additional:*** Additional information about the word or its roots.
-
+- **_return:_** If the word exist in DB, return 1 else return 0
+- **_word:_** Corrected version of the word you get the data for.
+- **_derivedLang:_** Which language the word has deriven from.
+- **_explanation:_** Explanation and meaning of the word and its roots.
+- **_firstInHistory:_** Which Turkish book contains the word for the first time as it is known.
+- **_additional:_** Additional information about the word or its roots.
 
 ### Get A Random Word Data
+
 Allows you to get the data of a random word from the Database.
 
 ```
@@ -54,6 +58,7 @@ GET https://api.etimolojiturkce.com/word/random
 ```
 
 ### Get Multiple Random Words
+
 Allows you to get the data of a random word from the Database.
 
 ```
@@ -61,10 +66,11 @@ GET https://api.etimolojiturkce.com/word/random&q={quantity} (eg:5, MAX:10)
 
 ["sardalya","kar\u015f\u0131","mucit","hedonizm","delalet"]
 ```
+
 This returns an array of words.
 
-
 ### Search for Words
+
 Allows you to search in the existing words form the Database.
 
 ```
@@ -84,14 +90,16 @@ GET https://api.etimolojiturkce.com/search/{TERM} (eg: aba)
   "9":"habaset"
 }
 ```
-In this json dump, return value being 1 means that the searched {term} actually exist in the database, if return value is 0, the word does not exist, but the results by search engine are listed below. *MAX 10 word is listed.*
+
+In this json dump, return value being 1 means that the searched {term} actually exist in the database, if return value is 0, the word does not exist, but the results by search engine are listed below. _MAX 10 word is listed._
 
 ## Examples with Javascript API
+
 The Javascript side of the API is already implemented, here is some examples explaining how you can use it;
 
 Download the javascript file in the master of his repository and include it to your page:
 
-```<script type="text/javascript" src="your/js/path/etimolojiturkce.js"></script>```
+`<script type="text/javascript" src="your/js/path/etimolojiturkce.js"></script>`
 
 Some examples with the function;
 
@@ -122,8 +130,9 @@ Some examples with the function;
 - Did you implement `etimolojiTurkceApi()` function in the programming language you are using? PR your code to the master directiory.
 
 ## Suggestions
+
 Did you like the api? Yes it can be better, open any suggestions as an issue and have fun coding. Keep us updated with your project that you are using the api with.
 
-
 ## Sources and Licensing
+
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
